@@ -2,11 +2,11 @@ package user
 
 import (
 	"context"
+	"fmt"
 	v1 "middle_srv/app/rpc/api/user/v1"
+	"time"
 
 	"github.com/gogf/gf/contrib/rpc/grpcx/v2"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
 )
 
 type Controller struct {
@@ -18,9 +18,11 @@ func Register(s *grpcx.GrpcServer) {
 }
 
 func (*Controller) Create(ctx context.Context, req *v1.CreateReq) (res *v1.CreateRes, err error) {
-	return nil, gerror.NewCode(gcode.CodeNotImplemented)
+	time.Sleep(10 * time.Second)
+	fmt.Println("干马爹")
+	return nil, nil
 }
 
 func (*Controller) Modify(ctx context.Context, req *v1.CreateReq) (res *v1.CreateReq, err error) {
-	return nil, gerror.NewCode(gcode.CodeNotImplemented)
+	return nil, nil
 }

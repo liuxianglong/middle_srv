@@ -5,9 +5,12 @@ go 1.22.0
 toolchain go1.22.10
 
 require (
+	github.com/gogf/gf/contrib/config/consul/v2 v2.9.0
 	github.com/gogf/gf/contrib/registry/consul/v2 v2.9.0
 	github.com/gogf/gf/contrib/rpc/grpcx/v2 v2.9.0
 	github.com/gogf/gf/v2 v2.9.0
+	github.com/hashicorp/consul/api v1.26.1
+	github.com/hashicorp/go-cleanhttp v0.5.2
 	google.golang.org/grpc v1.71.3
 	google.golang.org/protobuf v1.36.4
 )
@@ -25,14 +28,12 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/grokify/html-strip-tags-go v0.1.0 // indirect
-	github.com/hashicorp/consul/api v1.26.1 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
-	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-hclog v1.5.0 // indirect
 	github.com/hashicorp/go-immutable-radix v1.3.1 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/go-rootcerts v1.0.2 // indirect
-	github.com/hashicorp/golang-lru v0.5.4 // indirect
+	github.com/hashicorp/golang-lru v1.0.2 // indirect
 	github.com/hashicorp/serf v0.10.1 // indirect
 	github.com/magiconair/properties v1.8.9 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
